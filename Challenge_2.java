@@ -12,18 +12,18 @@ public class Challenge_2 {
 
         String banner = """
         
-        ██████╗ ██╗     ███████╗███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
-        ██╔══██╗██║     ██╔════╝██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
-        ██████╔╝██║     █████╗  ███████╗██║ █╗ ██║███████║██████╔╝█████╗  
-        ██╔══██╗██║     ██╔══╝  ╚════██║██║███╗██║██╔══██║██╔══██╗██╔══╝  
-        ██████╔╝███████╗███████╗███████║╚███╔███╔╝██║  ██║██║  ██║███████╗
-        ╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+            ██████╗ ██╗     ███████╗███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
+            ██╔══██╗██║     ██╔════╝██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
+            ██████╔╝██║     █████╗  ███████╗██║ █╗ ██║███████║██████╔╝█████╗  
+            ██╔══██╗██║     ██╔══╝  ╚════██║██║███╗██║██╔══██║██╔══██╗██╔══╝  
+            ██████╔╝███████╗███████╗███████║╚███╔███╔╝██║  ██║██║  ██║███████╗
+            ╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
-        Desafio semana 2 de Codember v1.0
-        """;
+            Desafio semana 2 de Codember v1.0
+            Escriba Help, para ver los comandos disponibles
+            """;
 
-        System.out.println(banner);
-        System.out.println("Escriba Help, para ver los comandos disponibles");
+        System.out.println(banner);        
 
         do {
 
@@ -87,13 +87,11 @@ public class Challenge_2 {
         } else {
 
             String mensaje = """
-                    No se reconoce el comando, recuerda no usar espacios
-                    Escriba Help, para ver los comandos disponibles
+                    \nNo se reconoce el comando, recuerda no usar espacios
+                    Escriba Help, para ver los comandos disponibles\n
                     """;
-
-            System.out.println("");
+            
             System.out.println(mensaje);            
-            System.out.println("");
         }        
     }    
 
@@ -134,7 +132,7 @@ public class Challenge_2 {
     private static void help() {
         
         String help = """
-                Los comandos \"#\", \"@\", \"*\", \"&\" se pueden combinar entre si,        
+                \nLos comandos \"#\", \"@\", \"*\", \"&\" se pueden combinar entre si,        
                 sin poner espacios
                 \"#\" Incrementa el valor numérico en 1.
                 \"@\" Decrementa el valor numérico en 1.
@@ -142,12 +140,10 @@ public class Challenge_2 {
                 \"&\" Imprime el valor numérico actual.
                 \"Help\" Muestra los comandos disponibles
                 \"Reset\" Devuelve el valor inicial a 0
-                \"Exit\" Acabar con la ejecucion del programa
+                \"Exit\" Acabar con la ejecucion del programa\n
                 """;
         
-        System.out.println("");
-        System.out.println(help);
-        System.out.println("");
+        System.out.println(help);        
     }
 
     //Metodo para #
